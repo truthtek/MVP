@@ -1,141 +1,155 @@
+/* Importing Google Fonts - Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+/* Applying global styles to all elements */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Use border-box sizing model */
+  scroll-behavior: smooth; /* Smooth scrolling */
 }
 
+/* Body styles */
 body {
-  font-family: 'Open Sans', sans-serif;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  display: grid;
-  place-items: center;
-  background-color: #bc2525;
+  font-family: 'Open Sans', sans-serif; /* Setting the font family */
+  display: grid; /* Using grid layout */
+  place-items: center; /* Centering items horizontally and vertically */
+  background-color: #bc2525; /* Setting background color */
 }
 
+/* Title styles */
 .title {
-  margin: 20px 0;
+  margin: 20px 0; /* Adding vertical margin */
 }
 
+/* Main container styles */
 .main {
-  border: 8px solid #dddddd;
-  border-radius: 24px;
-  overflow: hidden;
+  border: 8px solid #dddddd; /* Setting border with color */
+  border-radius: 24px; /* Rounding corners */
+  overflow: hidden; /* Hiding overflow content */
 }
 
+/* User name section styles */
 .name {
-  display: flex;
-  font-size: 32px;
-  font-weight: 700;
-  padding: 8px 16px;
-  color: #7e7e7e;
-  background-color: #ebebeb;
+  display: flex; /* Using flex layout */
+  font-size: 32px; /* Setting font size */
+  font-weight: 700; /* Setting font weight */
+  padding: 8px 16px; /* Adding padding */
+  color: #7e7e7e; /* Setting text color */
+  background-color: #ebebeb; /* Setting background color */
 }
 
 .name > span {
-  color: #bbb;
+  color: #bbb; /* Setting color for icon */
 }
 
+/* Name input styles */
 .name-input {
-  font-size: 24px;
-  font-weight: 700;
-  color: #7e7e7e;
-  flex-grow: 1;
-  border: none;
-  margin: 0px 12px;
-  outline: none;
-  background-color: #ebebeb;
+  font-size: 24px; /* Setting font size */
+  font-weight: 700; /* Setting font weight */
+  color: #7e7e7e; /* Setting text color */
+  flex-grow: 1; /* Allowing input to grow */
+  border: none; /* Removing border */
+  margin: 0px 12px; /* Adding horizontal margin */
+  outline: none; /* Removing outline */
+  background-color: #ebebeb; /* Setting background color */
 }
 
+/* Message container styles */
 .message-container {
-  display: flex;
-  flex-direction: column;
-  background-color: #f6f6f6;
-  width: 400px;
-  height: 600px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  display: flex; /* Using flex layout */
+  flex-direction: column; /* Setting direction to column */
+  background-color: #f6f6f6; /* Setting background color */
+  width: 400px; /* Setting width */
+  height: 600px; /* Setting height */
+  overflow-y: scroll; /* Adding vertical scroll */
+  overflow-x: hidden; /* Hiding horizontal overflow */
 }
 
+/* Message bubble styles */
 .message-left,
 .message-right {
-  list-style: none;
-  padding: 8px 12px;
-  margin: 12px;
-  max-width: 250px;
-  font-size: 18px;
-  word-wrap: break-word;
+  list-style: none; /* Removing list style */
+  padding: 8px 12px; /* Adding padding */
+  margin: 12px; /* Adding margin */
+  max-width: 250px; /* Setting maximum width */
+  font-size: 18px; /* Setting font size */
+  word-wrap: break-word; /* Enabling word wrap */
 }
 
+/* Left-aligned message bubble styles */
 .message-left {
-  border-radius: 20px 20px 20px 0px;
-  align-self: flex-start;
-  background-color: #fff;
-  box-shadow: -2px 2px 4px #dcdcdc;
+  border-radius: 20px 20px 20px 0px; /* Rounding corners */
+  align-self: flex-start; /* Aligning to the start */
+  background-color: #fff; /* Setting background color */
+  box-shadow: -2px 2px 4px #dcdcdc; /* Adding shadow */
 }
 
+/* Right-aligned message bubble styles */
 .message-right {
-  border-radius: 20px 20px 0px 20px;
-  align-self: flex-end;
-  background-color: #2d2d2d;
-  box-shadow: 2px 2px 4px #dcdcdc;
-  color: #f6f6f6;
+  border-radius: 20px 20px 0px 20px; /* Rounding corners */
+  align-self: flex-end; /* Aligning to the end */
+  background-color: #2d2d2d; /* Setting background color */
+  box-shadow: 2px 2px 4px #dcdcdc; /* Adding shadow */
+  color: #f6f6f6; /* Setting text color */
 }
 
+/* Message timestamp styles */
 .message-left > p > span,
 .message-right > p > span {
-  display: block;
-  font-style: italic;
-  font-size: 12px;
-  margin-top: 4px;
+  display: block; /* Displaying as block element */
+  font-style: italic; /* Italicizing text */
+  font-size: 12px; /* Setting font size */
+  margin-top: 4px; /* Adding top margin */
 }
 
+/* Feedback message styles */
 .feedback {
-  font-style: italic;
-  font-size: 14px;
-  padding: 0px 16px 16px 16px;
-  color: #2d2d2d;
-  text-align: center;
+  font-style: italic; /* Italicizing text */
+  font-size: 14px; /* Setting font size */
+  padding: 0px 16px 16px 16px; /* Adding padding */
+  color: #2d2d2d; /* Setting text color */
+  text-align: center; /* Center-aligning text */
 }
 
+/* Message form styles */
 .message-form {
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
+  display: flex; /* Using flex layout */
+  justify-content: space-between; /* Justifying content */
+  width: 400px; /* Setting width */
 }
 
+/* Message input styles */
 .message-input {
-  flex-grow: 1;
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  padding: 0 12px;
-  background-color: #fff;
+  flex-grow: 1; /* Allowing input to grow */
+  height: 48px; /* Setting height */
+  font-size: 16px; /* Setting font size */
+  border: none; /* Removing border */
+  outline: none; /* Removing outline */
+  padding: 0 12px; /* Adding horizontal padding */
+  background-color: #fff; /* Setting background color */
 }
 
+/* Send button styles */
 .send-button {
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  padding: 0px 20px;
-  outline: none;
-  background-color: #fff;
-  cursor: pointer;
+  height: 48px; /* Setting height */
+  font-size: 16px; /* Setting font size */
+  border: none; /* Removing border */
+  padding: 0px 20px; /* Adding padding */
+  outline: none; /* Removing outline */
+  background-color: #fff; /* Setting background color */
+  cursor: pointer; /* Changing cursor to pointer */
 }
 
+/* Vertical divider styles */
 .v-divider {
-  height: 48px;
-  width: 2px;
-  background-color: #f6f6f6;
+  height: 48px; /* Setting height */
+  width: 2px; /* Setting width */
+  background-color: #f6f6f6; /* Setting background color */
 }
 
+/* Client total display styles */
 .clients-total {
-  margin: 20px 0;
-  color: #7e7e7e;
+  margin: 20px 0; /* Adding vertical margin */
+  color: #7e7e7e; /* Setting text color */
 }
